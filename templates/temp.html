@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background: url(p2.jfif);background-size:cover;">
+        <h1 style="padding-top:50px;text-align: center;font-weight:bolder;font-size:48px;">PROCASTINATION AND ACADEMIC MOTIVATION TEST FOR STUDENTS</h1>
+        <div style='background:white;opacity:0.9;align-items:center;height:11000px;width:1100px;margin-left:200px;margin-top:70px;' >
+            <h1 style="padding-top:50px;text-align: center;font-weight:bolder;font-size:40px;">PROCASTINATION TEST</h1>
+            <h2 style="padding-top:10px;text-align: center;">You have to answer the questions asked below to know how much do you really procrastinate your work:</h2>
+            
+            
+           <form action="{{url_for('predict')}}"method="post"> <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q1. I often find myself performing tasks that I had intended to do days before.</h3>
+                <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1.&nbsp;Extremely Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Moderately Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;neutral</h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;moderately characteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Extremely characteristic</h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;"  type="number" name="p1" min="1" max="5" >
+            </div>
+            
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q2. When it is time to get up in the morning, I most often get right out of bed. </h3>
+                <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1.&nbsp;Extremely Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Moderately Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;neutral</h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;moderately characteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Extremely characteristic</h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="p2" min="1" max="5" >
+            </div>
+            
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q3. A letter may sit for days after I write it before mailing it.  </h3>
+                <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1.&nbsp;Extremely Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Moderately Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;neutral</h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;moderately characteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Extremely characteristic</h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="p3" min="1" max="5" >
+            </div>
+            
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q4. I generally return phone calls promptly.   </h3>
+                <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1.&nbsp;Extremely Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Moderately Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;neutral</h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;moderately characteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Extremely characteristic</h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="p4" min="1" max="5" >
+            </div>
+            
+             <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q5. Even with jobs that require little else except sitting down and doing them, I find they seldom get done for days.  </h3>
+                 <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1.&nbsp;Extremely Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Moderately Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;neutral</h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;moderately characteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Extremely characteristic</h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="p5" min="1" max="5" >
+            </div>
+           
+          
+            
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q6. I usually make decisions as soon as possible.  </h3>
+                <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1.&nbsp;Extremely Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Moderately Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;neutral</h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;moderately characteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Extremely characteristic</h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="p6" min="1" max="5" >
+            </div>
+            
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q7. I generally delay before starting on work I have to do. </h3>
+                <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1.&nbsp;Extremely Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Moderately Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;neutral</h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;moderately characteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Extremely characteristic</h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="p7" min="1" max="5" >
+            </div>
+            
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q8. When preparing to go out, I am seldom caught having to do something at the last minute.   </h3>
+                 <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1.&nbsp;Extremely Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Moderately Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;neutral</h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;moderately characteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Extremely characteristic</h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="p8" min="1" max="5" >
+            </div>
+            
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q9. In preparing for some deadline, I often waste time by doing other things.   </h3>
+                 <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1.&nbsp;Extremely Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Moderately Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;neutral</h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;moderately characteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Extremely characteristic</h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="p9" min="1" max="5" >
+            </div>
+            
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q10. I often have a task finished sooner than necessary.  </h3>
+                <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1.&nbsp;Extremely Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Moderately Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;neutral</h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;moderately characteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Extremely characteristic</h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="p10" min="1" max="5" >
+            </div>
+            
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q11. I always seem to end up shopping for birthday or Christmas gifts at the last minute.  </h3>
+                <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1.&nbsp;Extremely Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Moderately Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;neutral</h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;moderately characteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Extremely characteristic</h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="p11" min="1" max="5" >
+            </div>
+        
+                 <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q12. I usually buy even an essential item at the last minute. </h3>
+                <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1.&nbsp;Extremely Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Moderately Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;neutral</h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;moderately characteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Extremely characteristic</h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="p12" min="1" max="5" >
+            </div>
+            
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q13. I usually accomplish all the things I plan to do in a day.   </h3>
+               <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1.&nbsp;Extremely Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Moderately Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;neutral</h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;moderately characteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Extremely characteristic</h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="p13" min="1" max="5" >
+            </div>
+            
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q14. I usually take care of all the tasks I have to do before I settle down and relax for the evening. </h3>
+                <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1.&nbsp;Extremely Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Moderately Uncharacteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;neutral</h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;moderately characteristic</h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Extremely characteristic</h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="p14" min="1" max="5" >
+            </div>
+               
+               <input type="submit" style="color:white; background:blue;border:none;height:30px; width:150px;padding-bottom:10px;; padding:10px; margin-left:500px; border-radius:10px;font-weight: bolder;font-size:16px;">
+     
+            </form>
+            <br>
+               <br>
+              <h1>{{ predction_text1 }}</h1> 
+            
+            <h1 style="padding-top:50px;text-align: center;font-weight:bolder;font-size:40px;">ACADEMIC MOTIVATION TEST</h1>
+            <h2 style="padding-top:10px;text-align: center;">This test is to understand how motivated you are academically.</h2>
+            
+      <form action="{{url_for('predict1')}}"method="post">
+              <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q1. Because with only a high-school degree I would not find a high-paying job later on?',</h3>
+                <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a1" min="1" max="5" >
+            </div>
+                
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q2 'Because I experience pleasure and satisfaction while learning new things?',</h3>
+               <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a2" min="1" max="5" >
+            </div>  
+                
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q3 'Because I think that a college education will help me better prepare for the career I have chosen?'</h3>
+            <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a3" min="1" max="5" >
+            </div>
+                
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q4 'For the intense feelings I experience when I am communicating my own ideas to others?',</h3>
+               <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a4" min="1" max="5" >
+            </div>
+            
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q5 'Honestly, I don't know; I really feel that I am wasting my time in school?'</h3>
+               <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a5" min="1" max="5" >
+            </div>
+                
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q6 'For the pleasure I experience while surpassing myself in my studies?'</h3>
+            <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a6" min="1" max="5" >>
+            </div>
+                
+             <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q7 'To prove to myself that I am capable of completing my college degree?'</h3>
+                <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a7" min="1" max="5" >
+            </div>
+                
+             <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q8 'In order to obtain a more prestigious job later on?'</h3>
+                 <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a8" min="1" max="5" >
+            </div>
+                
+             <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q9 'For the pleasure I experience when I discover new things never seen before?'</h3>
+          <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a9" min="1" max="5" >
+            </div>
+                
+              <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q10 'Because eventually it will enable me to enter the job market in a field that I like?'</h3>
+              <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a10" min="1" max="5" >
+            </div>
+             
+                
+             <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q11 'For the pleasure that I experience when I read interesting authors?'</h3>
+             <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a11" min="1" max="5" >
+            </div>
+                
+             <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q12 'I once had good reasons for going to college; however, now I wonder whether I should continue?'</h3>
+                <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a12" min="1" max="5" >
+            </div>
+                
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q13 'For the pleasure that I experience while I am surpassing myself in one of my personal accomplishments?'</h3>
+            <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a13" min="1" max="5" >
+            </div>
+            
+               <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q14.'Because this will help me make a better choice regarding my career orientation?'</h3>
+      <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a14" min="1" max="5" >
+            </div>
+                
+                
+             <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q15 'For the pleasure that I experience when I feel completely absorbed by what certain authors have written?',</h3>
+                <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a15" min="1" max="5" >
+            </div>
+            
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q16 'I can't see why I go to college and frankly, I couldn't care less?'</h3>
+                <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a16" min="1" max="5" >
+            </div>
+                
+                
+             <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q17 'For the satisfaction I feel when I am in the process of accomplishing difficult academic activities?'</h3>
+                 <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a17" min="1" max="5" >
+            </div>
+            
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q18 'To show myself that I am an intelligent person?'</h3>
+                 <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a18" min="1" max="5" >
+            </div>
+            
+            
+          
+            
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q19 'In order to have a better salary later on?',</h3>
+               <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a19" min="1" max="5" >
+            </div>
+                
+              <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q20 'Because my studies allow me to continue to learn about many things that interest me?'</h3>
+           <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a20" min="1" max="5" >
+            </div>
+            
+              <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q21. 'Because I believe that a few additional years of education will improve my competence as a worker?',</h3>
+               <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a21" min="1" max="5" >
+            </div>
+             
+            <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q22 'For the "high" feeling that I experience while reading about various interesting subjects?',
+                'I don't know; I can't understand what I am doing in school?',
+                </h3>
+                 <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a22" min="1" max="5" >
+            </div>
+                
+              <div><h3 style="padding-top:10px;padding-left:30px;text-align: left;">Q23 ‘Because college allows me to experience a personal satisfaction in my quest for excellence in my studies?'
+                </h3>
+               <h5 style="padding-top:5px;padding-left:30px;text-align: left;">1. &nbsp;Does not correspond at all</h5>
+                <h5 style="padding-left:30px;text-align: left;">2. &nbsp;Corresponds a little </h5>
+                <h5 style="padding-left:30px;text-align: left;">3. &nbsp;Corresponds moderately </h5>
+                <h5 style="padding-left:30px;text-align: left;">4. &nbsp;Corresponds a lot </h5>
+                <h5 style="padding-left:30px;text-align: left;">5. &nbsp;Corresponds exactly </h5>
+                <input style="padding-left:30px;text-align: left;margin-left:50px;" type="number" name="a23" min="1" max="5" >
+            </div>
+    
+                              <input type="submit" style="color:white; background:blue;border:none;height:30px; width:150px;padding-bottom:10px;; padding:10px; margin-left:500px; border-radius:10px;font-weight: bolder;font-size:16px;">
+                            
+                             
+            
+          </form>  
+          <br>
+          <br>
+          {{ predction_text2 }}
+           
+      </div>
+        
+    </body>
+</html>
